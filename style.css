@@ -17,39 +17,45 @@ body{
 
 main h2, p{
     text-align: center;
+
 }
 
 .lead{
-    margin: 40px 0;
+    margin: 20px 0;
+
 }
 
 
-/* .leads h2,p{
-    text-align: center;
-} */
+.lead p{
+    margin: 10px;
+    font-size: 15px;
+}
 
 
 .cards{
     
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* align-items:  center; */
+    grid-template-columns: repeat(3, 1fr);
+    align-items:  center;
     grid-template-rows: auto;
-    gap: 20px;
+    gap: 8px;
+    width: 80%;
+    margin: auto;
    
 }
 .card{
     
-  
+    width: 200px;
     border-radius: 5px;
     padding: 5px 15px;
     margin: 5px;
     border: 1px solid hsl(229, 6%, 66%);
     box-shadow: 2px 0 2px solid hsl(0, 0%, 98%);
+    align-self: center;
 }
 .card p{
     text-align: left;
-    font-size: 16px;
+    font-size: 15px;
     margin: 10px 0;
 
 }
@@ -60,6 +66,10 @@ main h2, p{
     margin: 5px 0;
 }
 
+ .container .card{
+    margin-bottom: 20px;
+}
+
 .icon{
     display: flex;
     align-items: center;
@@ -68,17 +78,22 @@ main h2, p{
 } 
 
 .icon img{
-    width: 40px;
+    width: 30px;
 }
-
+/* 
 .card1{
     grid-column: 2/4;
-    grid-row: span 2;
+    grid-row-start: 2;
+    grid-row-start: 3;
+    width: 100%;
    
 }
 
 .card2{
+    width: fit-content;
     grid-column: 2/4;
+    
+    
    
 }
 
@@ -87,50 +102,51 @@ grid-column: 4/5;
     grid-row: 2;
 }
 
-.card4{
-    grid-row: 2;
-}
+ */
+ 
 
-/* .card1{
+.card1{
     
-    grid-column: 2/4;
+    
 
-    border-top: 4px solid red;
+    border-top: 4px solid hsl(34, 97%, 64%);
 }
 .card2{
     border-top: 4px solid red;
-    grid-column: -4/-2;
+    
     
 }
 
 .card3{
-    border-top: 4px solid hsl(34, 97%, 64%);
- grid-column: 4/5;
- grid-row: 2;
+    border-top: 4px solid hsl(212, 86%, 64%);
+ 
     
 }
 .card4{
-    border-top: 4px solid hsl(212, 86%, 64%);
-    grid-column: 1/-4;
-    grid-row: 2;
+    border-top: 4px solid hsl(180, 62%, 55%)
+   
  
-} */
+}
 
 @media (max-width: 485px) {
+    body{
+        padding: 20px 10px;
+    }
 
     .lead{
-        margin: 20px 10px;
+        margin: 10px 0;
     }
 
     .lead h2{
-        font-size: 25px;
+        font-size: 19px;
        
-        margin: 10px;
+        
     }
 
     .lead p{
-        font-size: 19px;
-        line-height: 20px;
+        margin: 5px 0;
+        font-size: 13px;
+        line-height: 15px;
         font-weight: 500;
     }
     .cards{
@@ -144,5 +160,19 @@ grid-column: 4/5;
     .card{
         width: 77%;
         margin: 10px auto;
+    }
+
+    .card h4{
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .card p{
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .lead p{
+        margin: 5px 0;
     }
 }
